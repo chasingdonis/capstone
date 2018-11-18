@@ -21,6 +21,23 @@ img {
     left: 5%;
 }
 
+.logo {
+    padding: 50px;
+    transition: transform .2s;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-filter: grayscale(100%);
+}
+
+.logo:hover {
+    -ms-transform: scale(2.5); /* IE 9 */
+    -webkit-transform: scale(2.5); /* Safari 3-8 */
+    transform: scale(2.5); 
+    -webkit-filter: grayscale(0);
+    transition: transform 0.5s ease-in-out; 
+    overflow: visible;
+}
+
 
 @media (max-width: 512px)  and (-webkit-min-device-pixel-ratio: 1.5),
        (max-width: 512px)  and (min-resolution: 1.5dppx),
@@ -103,7 +120,7 @@ body .demo-blog {
 }
 .demo-blog .mdl-card__media a,
 .demo-blog .mdl-card__title a {
-  color: inherit;
+  color: #86c4ac;
 }
 .demo-blog .mdl-card__supporting-text {
   width: 100%;
@@ -191,6 +208,7 @@ body .demo-blog {
 }
 .demo-blog .oldstreet .mdl-card__media {
   background-image: url('images/oldstreet.JPG');
+    background-color:#86c4ac;
 }
 .demo-blog .something-else .mdl-card__media {
   display: -webkit-flex;
@@ -267,12 +285,14 @@ body .demo-blog {
   margin-left: 16px;
 }
 .demo-blog .mdl-card > a {
-  color: inherit;
+  color: #86c4ac;
   text-decoration: none;
   font-weight: inherit;
 }
 .demo-blog .mdl-card h3 {
-  margin: 0;
+  margin:100px 10px 0 10px;
+  border: 3px solid #86c4ac;
+  background-color: rgba(0, 0, 0, 0.4); 
 }
 .demo-blog .mdl-card h3 a {
   text-decoration: none;
